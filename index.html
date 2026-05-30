@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- alle Hilfsmittel die ich benutze
+    https://delphi.tools
+    Google Fonts
+
+    alles was mit JavaScript zu tun hat ist KI-generiert, da ich JS noch nicht so bewandert bin
+    -->
+<div id="scrollProgress"></div>
+    <!-- Navigation -->
+    <nav class = "navbar">
+        <div class = "container">
+            <div class = "logo">
+                <a href="#top">Danny Welsch</a>
+            </div>
+            <ul class = "nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">My Hobbies</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id = "theme-toggle" class = "button">Theme wechseln</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Eye catcher -->
+    <header id = "top">
+        <div>
+            <h1><span id = "typewriter"></span></h1>
+            <p>Falls sie mich kennen lernen wollen sind sie hier richtig</p>
+            <a href = "#contact" class = "button">falls ich sie schon überzeugen konnte erreichen sie mich hier</a>
+        </div>
+    </header>
+
+    <!--</main>-->
+
+    <main>
+        <div class = 'container-first'  id = "about">
+            <h1>who i am</h1>
+            <section class = 'section-grid grid'>
+                <div class = 'text1 text-left-tertiary'>
+                    <h2>was macht mich aus</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'image1 bildplatzhalter'>
+                    Bild
+                </div>
+                <div class = 'text2 text-right-tertiary'>
+                    <h2>was ist mein werdegang</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'image2 bildplatzhalter'>
+                    Bild
+                </div>
+                <div class = 'text3 text-left-tertiary'>
+                    <h2>wie bin ich so drauf</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'image3 bildplatzhalter'>
+                    Bild
+                </div>
+            </section>
+        </div>
+
+        <!-- Erste Erscheinung: Links -->
+<div class="scroll-trigger-section left" id="trigger1">
+    <div class="parallax-element">
+        <pre class="ascii-art">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢛⣛⣉⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣻⣿⣷⣾⣿⡛⣿⠷⠊⠢⣘⠛⡟⢿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣽⣿⡿⣏⣴⣿⣿⣿⣿⠿⢿⡟⠃⠀⠀⠒⠉⠑⠠⠀⠟⣺⣶⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⢿⣿⣿⣶⡿⢋⣴⣿⣿⣿⣿⠝⠁⠀⠈⠈⠀⠀⠀⣶⣀⣈⠀⢀⢤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣾⣿⣿⡿⣠⣿⣿⣿⠏⠀⠀⠙⠀⠀⠀⠀⠀⠀⠰⠒⡀⠀⠛⠦⢭⣤⡬⣙⣿⣿⣯⡯⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⠟⢋⣷⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢄⢁⠉⠁⠈⠁⠛⢮⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⢿⡟⢁⣾⣿⣿⣿⣿⣿⢦⡀⠀⠀⠀⠀⠀⠀⠀⢀⡴⣼⣥⣽⡥⠀⡈⠁⠸⢤⠀⡮⣣⣤⣿⣛⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡏⣰⣾⣿⡿⣻⣻⣯⣿⡄⠨⠀⠀⠀⠀⠀⠀⠀⡾⣯⣿⣻⣿⣝⣁⣷⠀⢀⡘⠀⡶⢽⢿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⢯⣿⣿⡿⠣⠿⢩⠊⠀⠋⢡⣄⠀⠐⠀⠀⠀⢰⣷⣿⣿⣿⣷⢻⣻⡶⢤⠐⣷⠀⣶⢏⡿⢝⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⡇⢐⠐⠛⢳⡁⠀⠀⠉⠈⣆⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣇⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⡇⠘⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠁⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⢹⡿⠟⡇⠃⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⡇⢧⠔⣣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣶⣦⠀⠀⠘⢟⣷⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣶⣿⢆⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠿⣿⣿⣆⢀⠀⠀⠈⠻⢿⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣷⣷⣦⠢⣤⣴⣶⡾⡟⠋⣟⣁⠤⠿⠛⢻⠧⠹⠆⠀⠀⠀⠉⠚⣩⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣻
+⣿⣿⣿⣿⣿⣿⣍⠁⠑⠀⠀⢀⣴⣔⣀⠀⠀⠀⠀⠀⠠⠀⠢⠐⢑⠀⠀⣀⡀⠉⠉⠛⠛⠛⠛⠛⢛⣛⡭⠵⣛⣭⣾⣿
+⣿⣿⣿⣿⣿⣿⣿⣷⣤⣀⡰⠸⠆⢛⢕⡀⠄⠀⠀⠈⢄⠀⠀⠀⠀⠀⠀⠈⠂⢀⠂⠴⢤⣦⣬⣭⣵⣶⡾⣿⣿⣿⠿⣻
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡓⣀⠀⠀⡀⠀⠀⠀⠀⠉⠢⢀⡀⠀⠀⠀⠤⣆⣤⣤⣤⣤⣬⣭⣭⣽⠾⠛⣫⣴⣾⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⣂⡔⢀⣂⠄⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣉⣤⣴⣶⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣶⣦⣭⣤⣄⣒⣈⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿</pre>
+    </div>
+</div>
+        
+        <div class = 'container-second' id = "hobbies">
+            <h1>meine hobbys</h1>
+            <section class = 'section-grid'>
+                <div class = 'section-card'>
+                    <h2>zocken & D&D</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'section-card'>
+                    <h2>kochen</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'section-card'>
+                    <h2>sport</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+            </section>
+        </div>
+
+       
+        <div class = 'container-first' id = "skills">
+            <h1>meine Fähigkeiten</h1>
+            <section class = 'grid-reverse'>
+                <div class = 'text1 text-left-tertiary'>
+                    <h2>Coden</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'image1 bildplatzhalter'>
+                    Bild
+                </div>
+                <div class = 'text2 text-right-tertiary'>
+                    <h2>Moral pushen</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'image2 bildplatzhalter'>
+                    Bild
+                </div>
+                <div class = 'text3 text-left-tertiary'>
+                    <h2>für das team backen</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'image3 bildplatzhalter'>
+                    Bild
+                </div>
+            </section>
+        </div>
+
+        <div class="scroll-trigger-section right" id="trigger2">
+    <div class="parallax-element">
+        <pre class="ascii-art">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠀⣸⠃⠀⠀⣠⣄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣇⠅⡟⠀⠀⡼⢋⢢⡗⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸⢸⠃⠀⣸⢧⢄⡟⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡟⡀⡟⠀⣰⠇⣉⡞⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠇⢰⠃⢠⢏⣠⠏⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⢈⡟⣠⠯⣠⠏⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⣸⢡⢏⣲⠋⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢁⣯⢏⡾⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠤⢤⠖⠒⠦⠛⠛⠿⠞⠧⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣀⣠⠞⠉⠁⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠈⠀⠹⠦⢄⠀⠀⠀⠀⠀
+⢀⣠⠴⣶⡾⠟⠉⠉⠀⠀⡀⠀⠀⠀⠀⠀⠠⠀⠀⠄⠀⠁⠀⠄⠀⠘⠓⢶⠦⣀⠀
+⣟⣡⠞⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⣎⣳
+⣏⣟⣦⣅⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠈⠀⢀⣀⣠⣴⣿⡏
+⢸⣾⠽⣷⢮⣽⣽⣟⣒⣒⣒⢲⡴⡴⢦⡴⣦⣶⣴⣒⣶⣶⣶⢿⡿⣿⣻⢿⡽⣾⠇
+⠀⢫⣯⠙⢯⣷⣻⣞⡿⣯⣟⣯⢿⡽⣟⡿⣽⣞⡷⣯⢷⣻⣞⣯⣟⡷⣯⢿⣽⡏⠀
+⠀⠀⢻⣦⡈⢳⣟⣾⣽⣳⣟⡾⣯⢿⣽⣻⢷⣯⢿⡽⣯⢷⣻⢾⣽⣻⡽⣿⠏⠀⠀
+⠀⠀⠀⠙⢿⣟⣾⣳⢯⡷⣯⢿⣽⣻⢾⣽⣻⣞⣯⢿⡽⣯⣟⡿⣾⣽⡟⠃⠀⠀⠀
+⠀⠀⠀⠀⠀⠙⠻⣯⣿⡽⣯⣟⣾⣽⣻⣞⣷⣻⢾⣻⣟⣷⣻⣽⠟⠉⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢰⣿⣿⢻⣿⣿⣾⣷⣯⣷⣿⣾⣽⣿⣷⣿⣿⡟⣿⣿⡄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠙⠻⠿⢾⣽⣯⣟⣿⣽⣯⣟⣿⣽⣯⣿⢾⠽⠗⠋⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</pre>
+    </div>
+</div>
+
+        <div class = 'container-second' id = "contact">
+            <h1>wie sie mich erreichen</h1>
+            <section class = 'section-grid'>
+                <div class = 'section-card'>
+                    <h2>mobile</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'section-card'>
+                    <h2>email</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+                <div class = 'section-card'>
+                    <h2>wohnadresse</h2>
+                    <p>hier noch etwas reinschreiben</p>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+    <!--to the top button-->
+    <button id="scrollToTop" class="button" style="display:none; position:fixed; bottom:20px; right:20px; z-index:100;">↑</button>
+    <!-- mmmmh... Füße... -->
+    <footer>
+        <p>&copy; 2026 Welsch Danny. All rights reserved.</p>
+    </footer>
+
+    <script src = "js/script.js"></script>
+</body>
+</html>

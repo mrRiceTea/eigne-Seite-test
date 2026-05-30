@@ -1,0 +1,406 @@
+/*generelles*/
+:root{
+    --primary-color: #0a3d5c;/*#1a1a1a*/
+    --secondary-color: #1a6b8a;/*#3d3d3d*/
+    --tertiaery-color: #ff6b6b;/*#f0602c*/
+    --text-color: #0a3d5c;/*#1a1a1a*/
+    --light-bg: #ffa07a;/*#ff6347*/
+    --white: #f5deb3;/*#ffa07a*/
+    --border-color: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --inverted-border-color: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"]{
+        --primary-color:#f5deb3;
+        --secondary-color:#ffa07a;
+        --tertiaery-color:#ff6b6b;
+        --text-color:#f5deb3;
+        --light-bg:#1a6b8a;
+        --white:#0a3d5c;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+}
+   
+.container{
+    margin: 0 auto;
+}
+
+.text-left-tertiary{
+    color: var(--tertiaery-color);
+    margin-bottom: 5rem;
+}
+.text-right-tertiary{
+    color: var(--tertiaery-color);
+    text-align: right;
+    margin-bottom: 5rem;
+}
+
+.bildplatzhalter{
+    width: 100%;
+    height: 200px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    display: flex;
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: var(--secondary-color);
+    transform: translateY(-4px);
+    color: var(--white);
+}
+
+.theme-switcher {
+    margin:0.2rem 0;
+}
+
+select{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid var(--tertiaery-color);
+    background-color: var(--white);
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+}
+/*Navigation*/
+
+.navbar{
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width:100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--tertiaery-color);
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: var(--light-bg);
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 20px;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--tertiaery-color);
+    font-family: 'Rockwell Nova', sans-serif;
+    font-style: oblique;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--tertiaery-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color: var(--light-bg);
+}
+
+/*Header*/
+
+header{
+    background: linear-gradient(135deg, var(--tertiaery-color), var(--light-bg));
+    padding: 4rem 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+}
+
+header p{
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+/*Main*/
+
+main{
+    background-color: var(--primary-color);
+    padding:  0;
+}
+
+main h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top:2rem;
+    color: var(--tertiaery-color);
+    text-align: center;
+}
+
+main .container{
+    margin-bottom: 5rem;
+}
+
+/*Sections*/
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 5cqh;
+}
+
+.section-card{
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px var(--white);
+}
+
+.container-first{
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    padding: 5rem;
+}
+
+.container-first h1{
+    color: var(--tertiaery-color);
+}
+
+.container-second{
+    background: linear-gradient(135deg, var(--light-bg), var(--tertiaery-color));
+    color: var(--primary-color);
+    padding: 5rem;
+}
+
+.container-second h1{
+    color: var(--primary-color);
+}
+
+/*grid*/
+.grid{
+    display: grid;
+    grid-template-areas:"text1 image1"
+                        "image2 text2"
+                        "text3 image3";
+    gap: 3rem;
+}
+
+.grid-reverse{
+    display: grid;
+    grid-template-areas:"image1 text1"
+                        "text2 image2"
+                        "image3 text3";
+    gap: 2rem;
+}
+
+.text1{
+    grid-area: text1;
+}
+.text2{
+    grid-area: text2;
+}
+.text3{
+    grid-area: text3;
+}
+.image1{
+    grid-area: image1;
+}
+.image2{
+    grid-area: image2;
+}
+.image3{
+    grid-area: image3;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*Media Queries*/
+
+@media (max-width: 768px) {
+    .container-first, .container-second {
+        padding: 3rem 1.5rem;
+    }
+
+    .grid, .grid-reverse {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .text-left-tertiary, .text-right-tertiary {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .image1, .text2, .image3 {
+        height: 150px; 
+        order: 2; 
+    }
+    .text1, .image2, .text3 {
+        order: 1;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .parallax-element {
+        font-size: 4px; 
+        overflow-x: hidden;
+    }
+
+    .scroll-trigger-section {
+        padding: 0 5%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+/*Ki - Elemente*/
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-card, .bildplatzhalter {
+    position: relative; /* Wichtig für die Positionierung des Lichts */
+    overflow: hidden; /* Verhindert, dass das Licht überquillt */
+}
+
+#scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%; /* Startet bei 0 */
+    height: 4px;
+    background-color: var(--tertiaery-color); /* Deine Akzentfarbe */
+    z-index: 1001; /* Über der Navbar (die hat 1000 durch sticky) */
+    transition: width 0.1s ease-out;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+#typewriter {
+    border-right: 3px solid var(--primary-color);
+    animation: blink 0.7s step-end infinite;
+}
+
+.nav-links a.active {
+    color: var(--light-bg);
+    border-bottom: 2px solid var(--tertiaery-color);
+}
+.bildplatzhalter {
+    /* ... dein restlicher Code ... */
+    transition: transform 0.5s ease-out; /* Macht das Zurückschwenken flüssig */
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.scroll-trigger-section {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 10%;
+}
+
+/* Standardzustand des Elements */
+.parallax-element {
+    opacity: 0;
+    transition: all 1s ease-out;
+    font-family: monospace;
+    font-size: 8px; /* Für ASCII sehr wichtig */
+    line-height: 1;
+}
+
+/* Wenn das Bild links erscheinen soll */
+.left { justify-content: flex-start; }
+.left .parallax-element { transform: translateX(-100px); }
+
+/* Wenn das Bild rechts erscheinen soll */
+.right { justify-content: flex-end; }
+.right .parallax-element { transform: translateX(100px); }
+
+/* Die Klasse, die wir per JS hinzufügen */
+.parallax-element.show {
+    opacity: 1;
+    transform: translateX(0) scale(1.1);
+    color: var(--tertiaery-color);
+    text-shadow: 0 0 15px var(--tertiaery-color); /* Glow-Effekt */
+}
+
